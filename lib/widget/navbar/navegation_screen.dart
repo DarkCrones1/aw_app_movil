@@ -1,4 +1,4 @@
-import 'package:mundo_artesano/pages/principal_pages/catalog_page_screen.dart';
+import 'package:mundo_artesano/pages/principal_pages/store_page_screen.dart';
 import 'package:mundo_artesano/pages/principal_pages/home_page_screen.dart';
 import 'package:mundo_artesano/pages/principal_pages/profile_page_screen.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +24,7 @@ class _NavBarScreenState extends State<NavBarScreen> {
         selectedIndex: currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(icon: Icon(Icons.home), label: 'Inicio'),
-          NavigationDestination(icon: Icon(Icons.store), label: 'Catálogo'),
+          NavigationDestination(icon: Icon(Icons.store), label: 'Tienda'),
           NavigationDestination(
               icon: Icon(Icons.person), label: 'Perfil'),
         ],
@@ -36,7 +36,7 @@ class _NavBarScreenState extends State<NavBarScreen> {
         ),
         Container(
           alignment: Alignment.center,
-          child: const CatalogPageScreen(),
+          child: const StorePageScreen(),
         ),
         Container(
           alignment: Alignment.center,

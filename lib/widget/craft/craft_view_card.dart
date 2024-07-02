@@ -25,11 +25,10 @@ class CraftViewCard extends StatelessWidget {
   Widget createItemCard(BuildContext context) => GestureDetector(
         onTap: () => Navigator.pushNamed(context, '/'),
         child: Stack(
-          fit: StackFit.expand,
+          fit: StackFit.passthrough,
           children: [
-            FadeInImage.assetNetwork(
-              placeholder: 'image/loading.gif',
-              image: 'image/mundoartesano.png',
+            Image.asset(
+              'image/mundoartesano.png',
               fit: BoxFit.cover,
             ),
             Container(
@@ -56,10 +55,10 @@ class CraftViewCard extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 5),
+                  SizedBox(height: 5),
                   Text(
                     '\$50',
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.white,
                       fontSize: 14,
                     ),
