@@ -1,4 +1,5 @@
 import 'package:mundo_artesano/config/theme/app_theme.dart';
+import 'package:mundo_artesano/pages/Cart_pages/cart_page_screen.dart';
 import 'package:mundo_artesano/pages/user_pages/login_page_screen.dart';
 import 'package:mundo_artesano/pages/user_pages/recover_page_screen.dart';
 import 'package:mundo_artesano/pages/user_pages/signup_page_screen.dart';
@@ -35,13 +36,14 @@ class MaterialAppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Mundo Artesano',
-      theme: AppTheme( selectedColor: 5).theme(),
+      theme: AppTheme(selectedColor: 5).theme(),
       home: const LoginPageScreen(),
       routes: {
         '/home': (context) => const NavBarScreen(),
         '/log_in': (context) => const LoginPageScreen(),
         '/sign_up': (context) => const SignUpPageScreen(),
         '/recover_pass': (context) => const RecoverPassPageScreen(),
+        '/cart_page': (context) => const CartPageScreen(),
       },
     );
   }

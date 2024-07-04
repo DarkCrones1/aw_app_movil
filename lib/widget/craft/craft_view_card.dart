@@ -14,7 +14,7 @@ class CraftViewCard extends StatelessWidget {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 childAspectRatio: 3 / 3),
-            itemCount: 10, // Ajusta el número de elementos según sea necesario
+            itemCount: 10,
             itemBuilder: (context, index) => createItemCard(context),
           ),
         )
